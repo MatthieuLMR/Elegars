@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/sauvegarde"
+              style="@style/activity"
+              android:background="@drawable/fond">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/btn1supp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            style="@style/btnPartie"
+            android:drawableEnd="@drawable/button_supp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/btn2supp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/btn1supp"
+            style="@style/btnPartie"
+            android:drawableEnd="@drawable/button_supp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/btn3supp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/btn2supp"
+            style="@style/btnPartie"
+            android:drawableEnd="@drawable/button_supp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/btn4supp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/btn3supp"
+            style="@style/btnPartie"
+            android:drawableEnd="@drawable/button_supp"/>
+
+</RelativeLayout>

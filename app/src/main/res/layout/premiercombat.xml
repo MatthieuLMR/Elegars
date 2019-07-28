@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/combat"
+                style="@style/activity"
+                android:background="@drawable/fond1">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/LayoutTextFirstFight">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/LayoutCombat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/widget_enemi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:padding="15dp">
+
+            <include layout="@layout/widget_enemi" />
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/ibtnDes10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="200dp"
+            android:layout_marginBottom="70dp">
+
+            <ImageButton
+                android:id="@+id/btnDes10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:contentDescription="dès de 10"
+                android:scaleType="fitCenter"
+                android:src="@drawable/button_dice_10" />
+
+            <TextView
+                android:id="@+id/textDes10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="4dp"
+                android:clickable="false"
+                android:textColor="#7d99d1"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp">
+
+            <include layout="@layout/widget_perso" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtCombat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="150dp"
+            android:layout_marginEnd="60dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

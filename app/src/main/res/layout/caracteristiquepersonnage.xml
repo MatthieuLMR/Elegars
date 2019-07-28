@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/newpartie"
+                style="@style/activity"
+                android:background="@drawable/fond1">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carateristique"
+            android:id="@+id/textHautCaracteristique"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            style="@style/textDefault"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textHautCaracteristique"
+            android:layout_alignStart="@+id/textHautCaracteristique"
+            android:id="@+id/LayoutVie">
+
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/vie"
+                android:id="@+id/textVie"
+                android:layout_marginTop="5dp"
+                style="@style/textDefault"/>
+
+        <ProgressBar
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:id="@+id/ProgressBarVie"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textVieMax"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                style="@style/textDefault"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LayoutVie"
+            android:layout_alignStart="@+id/textHautCaracteristique"
+            android:id="@+id/LayoutHabilite">
+
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/habilite"
+                android:id="@+id/textHabilite"
+                android:layout_marginTop="5dp"
+                style="@style/textDefault"/>
+
+        <ProgressBar
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:id="@+id/ProgressBarHabilite"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textHabiliteMax"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                style="@style/textDefault"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LayoutHabilite"
+            android:layout_alignStart="@+id/textHautCaracteristique"
+            android:id="@+id/LayoutMana">
+
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/mana"
+                android:id="@+id/textMana"
+                android:layout_marginTop="5dp"
+                style="@style/textDefault"/>
+
+        <ProgressBar
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:id="@+id/ProgressBarMana"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textManaMax"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                style="@style/textDefault"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/LayoutMana"
+                 android:id="@+id/ibtnDes10"
+                 android:layout_centerHorizontal="true">
+    <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/btnDes10"
+            android:src="@drawable/button_dice_10"
+            android:background="@null"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:id="@+id/textDes10"
+                android:layout_marginEnd="7dp"
+                android:textSize="40sp"
+                android:textColor="#7d99d1"
+                android:textStyle="bold|italic"/>
+    </FrameLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/clicdes"
+            android:id="@+id/textClicDes"
+            android:layout_below="@+id/ibtnDes10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            style="@style/textDefault"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textResultat"
+            android:layout_below="@+id/textClicDes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            style="@style/textDefault"/>
+
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/button_parchemin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/continuer"
+            android:textSize="25dp"
+            style="@style/btnPartie"
+            android:id="@+id/iBtnCaracteristiqueContinue"/>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/main"
+                style="@style/activity"
+                android:background="@drawable/fond1">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choixsexe"
+            android:id="@+id/textChoixSexe"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            style="@style/textDefault"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textChoixSexe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp">
+
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/button_femme"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/iBtnFemme"
+                        android:background="@drawable/select_button"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:layout_margin="15dp"
+                        android:clickable="true"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/femme"
+                        android:id="@+id/textFemme"
+                        android:textStyle="italic"
+                        android:layout_marginStart="25dp"
+                        style="@style/textDefault"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/button_homme"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/iBtnHomme"
+                        android:background="@drawable/select_button"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:layout_margin="15dp"
+                        android:clickable="true"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/homme"
+                        android:id="@+id/textHomme"
+                        android:textStyle="italic"
+                        android:layout_marginStart="25dp"
+                        style="@style/textDefault"/>
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/button_parchemin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/continuer"
+            android:textSize="25dp"
+            style="@style/btnPartie"
+            android:id="@+id/iBtnSexeContinue"/>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Elegars</string>
+    <string name="new_partie">Nouvelle partie</string>
+    <string name="continue_partie">Continuer une partie</string>
+    <string name="welcome">Nous allons maintenant créer votre avatar.</string>
+    <string name="svgFull">Désolé, vous avez atteint le nombre maximum de personnage. Continuer une partie ou effacer un personnage.</string>
+    <string name="answerName">Entrez un nom pour votre personnage :</string>
+    <string name="valider">Valider</string>
+    <string name="carateristique">Génération des caractéristiques</string>
+    <string name="habilite">Habilité</string>
+    <string name="vie">Vie</string>
+    <string name="mana">Mana</string>
+    <string name="clicdes">(Appuyer sur le dès pour le lancer)</string>
+    <string name="choixsexe">Veuillez choisir le sexe de votre personnage</string>
+    <string name="musique">Musique</string>
+    <string name="gestionSvg">Gestion des sauvegardes</string>
+    <string name="creationperso">Création de l\'avatar</string>
+    <string name="continuer">Continuer</string>
+    <string name="choixrace">Veuillez choisir la race de votre personnage</string>
+    <string name="descriptionHumain">Les humains possèdent un dynamisme exceptionnel ainsi qu\'une grande capacité à surmonter les difficultés.</string>
+    <string name="descriptionElfe">Les elfes sont les créatures de la nature qui possèdent de nombreux points communs avec les créatures féeriques.</string>
+    <string name="descriptionNain">Les nains forment une race stoïque et sévère enfouie dans des cités sculptées au coeur des montagnes.</string>
+    <string name="premierCombat">Votre avatar est maintenant créé ! Passons maintenant à votre premier combat.</string>
+    <string name="nameSquelette">Squelette Guerrier</string>
+    <string name="homme">Homme</string>
+    <string name="femme">Femme</string>
+</resources>

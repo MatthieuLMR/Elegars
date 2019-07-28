@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="250dp"
+              android:layout_height="100dp"
+              android:background="@drawable/vue_enemi">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="12dp">
+
+
+                <ProgressBar
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="110dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="2dp"
+                        android:id="@+id/progressBarVieEnemi"
+                        android:progressDrawable="@drawable/progress_bar_vie"/>
+
+                <TextView
+                        android:background="#00000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_alignStart="@+id/progressBarVieEnemi"
+                        android:id="@+id/textVieBarProgressWidgetEnemi"
+                        android:text="@string/vie"
+                        style="@style/textDefault"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="12dp">
+
+                <ProgressBar
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="110dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="2dp"
+                        android:id="@+id/progressBarManaEnemi"
+                        android:progressDrawable="@drawable/progress_bar_mana"/>
+
+                <TextView
+                        android:background="#00000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_alignStart="@+id/progressBarManaEnemi"
+                        android:id="@+id/textManaBarProgressWidgetEnemi"
+                        android:text="@string/mana"
+                        style="@style/textDefault"/>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textNameEnemiWidget"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="italic"
+                    style="@style/textDefault"/>
+
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/imageAvatarEnemi"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

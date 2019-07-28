@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="250dp"
+              android:layout_height="100dp"
+              android:background="@drawable/vue_perso">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="95dp"
+                android:layout_height="85dp"
+                android:id="@+id/imageAvatar"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="9dp"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textNamePersoWidget"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="italic"
+                    style="@style/textDefault"/>
+
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginStart="18dp">
+
+
+                <ProgressBar
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="110dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="2dp"
+                        android:id="@+id/progressBarVie"
+                        android:progressDrawable="@drawable/progress_bar_vie"/>
+
+                <TextView
+                        android:background="#00000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_alignStart="@+id/progressBarVie"
+                        android:id="@+id/textVieBarProgressWidgetPerso"
+                        android:text="@string/vie"
+                        style="@style/textDefault"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="18dp">
+
+                <ProgressBar
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="110dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="2dp"
+                        android:id="@+id/progressBarMana"
+                        android:progressDrawable="@drawable/progress_bar_mana"/>
+
+                <TextView
+                        android:background="#00000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_alignStart="@+id/progressBarMana"
+                        android:id="@+id/textManaBarProgressWidgetPerso"
+                        android:text="@string/mana"
+                        style="@style/textDefault"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

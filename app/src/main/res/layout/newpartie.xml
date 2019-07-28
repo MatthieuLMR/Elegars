@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/newpartie"
+              style="@style/activity"
+              android:background="@drawable/fond1">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textCreationPerso"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"
+            style="@style/textDefault"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textAnswerName"
+            android:layout_below="@id/textCreationPerso"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            style="@style/textDefault"
+            android:visibility="gone"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editNameHero"
+            android:layout_below="@+id/textAnswerName"
+            android:layout_margin="20dp"
+            android:padding="5dp"
+            android:maxLength="15"
+            android:background="#716f6f"
+            android:visibility="gone"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnValideName"
+            android:layout_below="@+id/editNameHero"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            style="@style/btnPartie"/>
+
+    </LinearLayout>
+</ScrollView>
